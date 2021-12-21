@@ -1,15 +1,15 @@
 (() => {
-    const menuBtnRef = document.querySelector('[data-burger-button]');
-    const mobileMenueRef = document.querySelector('[data-burger]');
+    const menuBtnRef = document.querySelector("[data-burger-button]");
+    const mobileMenueRef = document.querySelector("[data-burger]");
 
-    menuBtnRef.addEventListener('Click', () => {
+    menuBtnRef.addEventListener("click", () => {
         const expanded =
-            menuBtnRef.getAttribute('aria-expanded') === "true" || false;
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
         
-        menuBtnRef.classList.toggle('is-open');
-        menuBtnRef.setAttribute('aria-expanded', !expanded);
+        menuBtnRef.classList.toggle("is-open");
+        menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-        mobileMenueRef.classList.toggle('is-open');
+        mobileMenueRef.classList.toggle("is-open");
 
-  })
+    });
 })();

@@ -1,15 +1,58 @@
 .benefits {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 .benefits__list {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
 }
 .benefits__item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-}
-.benefits__item:nth-child(4n) {
-  margin-right: 0;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(2n),
+  &:nth-child(4n) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      margin-right: 0;
+    }
+  }
+
+  &:nth-child(3n),
+  &:nth-child(4n) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
+
+  &:nth-child(4n) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 0;
+    }
+  }
 }
 .benefits__title {
   margin-top: 0;

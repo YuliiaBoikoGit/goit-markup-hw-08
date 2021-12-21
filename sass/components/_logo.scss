@@ -1,0 +1,33 @@
+.logo {
+  color: $title-text-color;
+
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.logo--accent {
+  color: $accent-color;
+}
+
+// Footer logo
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: $primary-bg-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

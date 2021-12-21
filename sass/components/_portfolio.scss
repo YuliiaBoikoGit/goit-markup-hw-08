@@ -1,0 +1,15 @@
+.portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+// Buttons
+
+.buttons__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.buttons__item + .buttons__item {
+  margin-left: 8px;
+}

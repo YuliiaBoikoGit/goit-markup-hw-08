@@ -1,0 +1,48 @@
+.benefits {
+  padding-top: 94px;
+}
+.benefits__list {
+  display: flex;
+}
+.benefits__item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+.benefits__item:nth-child(4n) {
+  margin-right: 0;
+}
+.benefits__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits__descr {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.benefits__icon-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  color: $title-text-color;
+  background-color: $secondary-bg-color;
+}
+.benefits__icon {
+  width: 70px;
+  height: 70px;
+
+  color: currentColor;
+}

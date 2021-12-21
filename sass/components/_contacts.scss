@@ -1,6 +1,10 @@
 .contacts {
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .contacts__item + .contacts__item {
   margin-left: 50px;

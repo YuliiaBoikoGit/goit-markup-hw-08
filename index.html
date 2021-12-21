@@ -19,10 +19,8 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container page-header__menu">
+        <a class="logo" href="/"><span class="logo--accent">Web</span>Studio</a>
         <nav class="site-nav">
-          <a class="logo" href="/"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a class="site-nav__link current" href="./index.html">Студия</a>
@@ -53,6 +51,22 @@
             >
           </li>
         </ul>
+        <button type="button" class="burger-button is-open" data-burger-button>
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="burger-open"
+              href="./images/icons.svg#burger-open"
+            ></use>
+            <use
+              class="burger-close"
+              href="./images/icons.svg#burger-close"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -649,5 +663,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

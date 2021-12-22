@@ -1,19 +1,28 @@
 .contacts {
-  display: flex;
-  margin-left: auto;
-
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
-.contacts__item + .contacts__item {
-  margin-left: 50px;
+.contacts__item {
+  @media screen and (min-width: $desktop) {
+    margin-right: 50px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .contacts__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   color: $primary-text-color;
 
@@ -28,6 +37,11 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contacts__icon {

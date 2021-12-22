@@ -1,6 +1,8 @@
 .site-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
 }
 .site-nav__list {
   display: flex;

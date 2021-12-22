@@ -36,11 +36,11 @@
               <a class="site-nav__link" href="./contacts">Контакты</a>
             </li>
           </ul>
-           <button
+          <button
             type="button"
-            class="burger-button is-open"
-             aria-expanded="false"
-              aria-controls="burger-menu"
+            class="burger__button is-open"
+            aria-expanded="false"
+            aria-controls="burger-menu"
             data-burger-button
           >
             <svg
@@ -58,8 +58,9 @@
               ></use>
             </svg>
           </button>
-          <div class="burger-menu is-open" id="burger-menu" data-burger-menu>content</div>
-        </div>
+          <div class="burger__menu is-open" id="burger-menu" data-burger-menu>
+            content
+          </div>
         </nav>
         <ul class="contacts">
           <li class="contacts__item">
@@ -79,6 +80,7 @@
             >
           </li>
         </ul>
+      </div>
     </header>
     <main>
       <section class="portfolio-section">
@@ -413,5 +415,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,23 +1,79 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
 }
 .clients__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $title-text-color;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
-.clients__item + .clients__item {
-  margin-left: 30px;
+
+.clients__item {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  &:nth-child(2n),
+  &:nth-child(4n),
+  &:nth-child(6n) {
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+  &:nth-child(5n),
+  &:nth-child(6n) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  &:nth-child(3n),
+  &:nth-child(6n) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      margin-right: 0;
+    }
+  }
+  &:nth-child(4n),
+  &:nth-child(5n),
+  &:nth-child(6n) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 150px) / 6);
+    margin-right: 30px;
+  }
+  &:nth-child(6n) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 0;
+    }
+  }
 }
+
 .clients__thumb {
   display: flex;
 
@@ -31,7 +87,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
+  max-width: 210px;
   height: 92px;
 
   color: $primary-icon-color;
@@ -48,6 +104,14 @@
   &:hover {
     color: $accent-color;
     border-color: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 170px;
   }
 }
 .clients__icon {

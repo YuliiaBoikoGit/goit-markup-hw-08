@@ -19,8 +19,10 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container page-header__menu">
-        <a class="logo" href="/"><span class="logo--accent">Web</span>Studio</a>
         <nav class="site-nav">
+          <a class="logo" href="/"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a class="site-nav__link current" href="./index.html">Студия</a>
@@ -32,6 +34,31 @@
               <a class="site-nav__link" href="./contacts">Контакты</a>
             </li>
           </ul>
+          <button
+            type="button"
+            class="burger-button is-open"
+            aria-expanded="false"
+            aria-controls="burger-menu"
+            data-burger-button
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="burger-open"
+                href="./images/icons.svg#burger-open"
+              ></use>
+              <use
+                class="burger-close"
+                href="./images/icons.svg#burger-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="burger-menu is-open" id="burger-menu" data-burger-menu>
+            content
+          </div>
         </nav>
         <ul class="contacts">
           <li class="contacts__item">
@@ -51,22 +78,6 @@
             >
           </li>
         </ul>
-        <button type="button" class="burger-button is-open" data-burger-button>
-          <svg
-            width="40px"
-            height="40px"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              class="burger-open"
-              href="./images/icons.svg#burger-open"
-            ></use>
-            <use
-              class="burger-close"
-              href="./images/icons.svg#burger-close"
-            ></use>
-          </svg>
-        </button>
       </div>
     </header>
     <main>
@@ -178,7 +189,6 @@
                 class="members__image"
                 src="./images/employee1.jpg"
                 alt="Фото сотрудника"
-                width="270"
               />
               <div class="members__descr">
                 <h3 class="members__name">Игорь Демьяненко</h3>
@@ -238,7 +248,6 @@
                 class="members__image"
                 src="./images/employee2.jpg"
                 alt="Фото сотрудника"
-                width="270"
               />
               <div class="members__descr">
                 <h3 class="members__name">Ольга Репина</h3>
@@ -298,7 +307,6 @@
                 class="members__image"
                 src="./images/employee3.jpg"
                 alt="Фото сотрудника"
-                width="270"
               />
               <div class="members__descr">
                 <h3 class="members__name">Николай Тарасов</h3>
@@ -358,7 +366,6 @@
                 class="members__image"
                 src="./images/employee4.jpg"
                 alt="Фото сотрудника"
-                width="270"
               />
               <div class="members__descr">
                 <h3 class="members__name">Михаил Ермаков</h3>

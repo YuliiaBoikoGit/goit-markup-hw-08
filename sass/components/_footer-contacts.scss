@@ -2,8 +2,15 @@
   display: block;
 }
 .contacts-list__item + .contacts-list__item {
-  margin-top: 9px;
+  margin-top: 8px;
 }
+
+@media screen and (min-width: $desktop) {
+  .contacts-list__item + .contacts-list__item {
+    margin-top: 9px;
+  }
+}
+
 .contacts-list__link {
   color: rgba(255, 255, 255, 0.6);
 

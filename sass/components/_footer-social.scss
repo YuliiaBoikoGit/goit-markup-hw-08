@@ -1,8 +1,22 @@
 .social {
   display: block;
   width: 206px;
-  margin-left: 70px;
-  padding-top: 12px;
+
+  @media screen and (max-width: 767px) {
+    margin: 60px auto;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 165px;
+    padding-right: 89px;
+    padding-top: 5px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+    padding-top: 12px;
+  }
 }
 .social__title {
   margin-bottom: 20px;
@@ -14,6 +28,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    padding-left: 30px;
+  }
 }
 .social__thumb {
   display: flex;

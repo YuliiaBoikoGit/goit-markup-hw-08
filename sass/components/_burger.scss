@@ -1,0 +1,44 @@
+.burger-menu {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+
+  background-color: red;
+  padding: 48px 40px;
+
+  &.is-open {
+    display: block;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+// Button
+
+.burger-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  & .burger-close {
+    display: none;
+  }
+  &.is-open .burger-close {
+    display: block;
+  }
+  &.is-open .burger-open {
+    display: none;
+  }
+}

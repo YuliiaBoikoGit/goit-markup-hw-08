@@ -2,30 +2,8 @@
   border-bottom: 1px solid #ececec;
 }
 .page-header__menu {
+  position: relative;
+
   display: flex;
   align-items: center;
-}
-
-// Burger
-
-.burger-button {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
-
-  & .burger-close {
-    display: none;
-  }
-  &.is-open .burger-close {
-    display: block;
-  }
-  &.is-open .burger-open {
-    display: none;
-  }
 }

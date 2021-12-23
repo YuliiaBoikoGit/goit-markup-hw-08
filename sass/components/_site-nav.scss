@@ -3,6 +3,10 @@
   align-items: center;
   justify-content: space-between;
   min-height: 60px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 }
 .site-nav__list {
   @media screen and (max-width: 767px) {
@@ -29,7 +33,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     margin-right: 50px;
 
     &:last-child {

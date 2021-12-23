@@ -34,6 +34,9 @@
   border: none;
   background-color: transparent;
 
+  &:focus {
+    color: $accent-color;
+  }
   & .burger-close {
     display: none;
   }

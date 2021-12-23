@@ -1,6 +1,6 @@
 .contacts {
   @media screen and (max-width: 767px) {
-    display: none;
+    margin-bottom: 64px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -13,17 +13,21 @@
 .contacts__item {
   @media screen and (min-width: $desktop) {
     margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  &:last-child {
-    margin-right: 0;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 .contacts__link {
-  display: flex;
-  align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
   color: $primary-text-color;
 
   font-weight: 500;
@@ -39,6 +43,26 @@
     color: $accent-color;
   }
 
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.17;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+
+      font-size: 34px;
+      line-height: 1.18;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -48,4 +72,8 @@
   margin-right: 10px;
 
   fill: currentColor;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

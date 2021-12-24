@@ -62,6 +62,20 @@
   position: relative;
   overflow: hidden;
 }
+.work__image {
+  max-width: 450px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
+}
 .work__card {
   display: flex;
   align-items: center;
@@ -102,7 +116,7 @@
   border-right: 1px solid #eeeeee;
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    &:first-child {
+    &.first {
       padding-bottom: 56px;
     }
   }

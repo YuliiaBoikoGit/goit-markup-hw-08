@@ -848,26 +848,6 @@
   }
 }
 
-.members__image {
-  display: block;
-  max-width: 450px;
-  height: 460px;
-}
-
-@media screen and (min-width: 768px) {
-  .members__image {
-    width: 354px;
-    height: 374px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .members__image {
-    width: 270px;
-    height: 260px;
-  }
-}
-
 .members__descr {
   padding-top: 30px;
   padding-bottom: 16px;
@@ -1847,6 +1827,8 @@
 
 .work__image {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .work__card {
@@ -1942,5 +1924,11 @@ body {
 
 body.modal-open {
   overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */

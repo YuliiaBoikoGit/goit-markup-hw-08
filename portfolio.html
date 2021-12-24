@@ -18,14 +18,14 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <div class="container page-header__menu">
+      <div class="page-header__menu container">
         <nav class="site-nav">
           <a class="logo" href="/"
             ><span class="logo--accent">Web</span>Studio</a
           >
           <button
             type="button"
-            class="burger__button is-open"
+            class="burger__button"
             aria-expanded="false"
             aria-controls="burger-menu"
             data-burger-button
@@ -45,7 +45,7 @@
               ></use>
             </svg>
           </button>
-          <div class="burger__menu is-open" id="burger-menu" data-burger-menu>
+          <div class="burger__menu" id="burger-menu" data-burger-menu>
             <ul class="site-nav__list">
               <li class="site-nav__item">
                 <a class="site-nav__link" href="./index.html">Студия</a>
@@ -123,9 +123,17 @@
                 <div class="work">
                   <img
                     class="work__image"
-                    src="./images/pf1.jpg"
+                    srcset="
+                      ./images/pf1-354.jpg 354w,
+                      ./images/pf1-370.jpg 370w,
+                      ./images/pf1-450.jpg 450w,
+                      ./images/pf1-708.jpg 708w,
+                      ./images/pf1-740.jpg 740w,
+                      ./images/pf1-900.jpg 900w
+                    "
+                    src="./images/pf1-354.jpg"
                     alt="Ноутбук с открытым веб-сайтом"
-                    width="370"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="work__card">
                     <p class="work__text">
@@ -147,9 +155,17 @@
                 <div class="work">
                   <img
                     class="work__image"
-                    src="./images/pf2.jpg"
+                    srcset="
+                      ./images/pf2-354.jpg 354w,
+                      ./images/pf2-370.jpg 370w,
+                      ./images/pf2-450.jpg 450w,
+                      ./images/pf2-708.jpg 708w,
+                      ./images/pf2-740.jpg 740w,
+                      ./images/pf2-900.jpg 900w
+                    "
+                    src="./images/pf2-354.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="work__card">
                     <p class="work__text">
@@ -171,9 +187,17 @@
                 <div class="work">
                   <img
                     class="work__image"
-                    src="./images/pf3.jpg"
+                    srcset="
+                      ./images/pf3-354.jpg 354w,
+                      ./images/pf3-370.jpg 370w,
+                      ./images/pf3-450.jpg 450w,
+                      ./images/pf3-708.jpg 708w,
+                      ./images/pf3-740.jpg 740w,
+                      ./images/pf3-900.jpg 900w
+                    "
+                    src="./images/pf3-354.jpg"
                     alt="Логотип ресторана Seafood"
-                    width="370"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="work__card">
                     <p class="work__text">
@@ -195,9 +219,17 @@
                 <div class="work">
                   <img
                     class="work__image"
-                    src="./images/pf4.jpg"
+                    srcset="
+                      ./images/pf4-354.jpg 354w,
+                      ./images/pf4-370.jpg 370w,
+                      ./images/pf4-450.jpg 450w,
+                      ./images/pf4-708.jpg 708w,
+                      ./images/pf4-740.jpg 740w,
+                      ./images/pf4-900.jpg 900w
+                    "
+                    src="./images/pf4-354.jpg"
                     alt="Наушники"
-                    width="370"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="work__card">
                     <p class="work__text">
@@ -219,9 +251,17 @@
                 <div class="work">
                   <img
                     class="work__image"
-                    src="./images/pf5.jpg"
+                    srcset="
+                      ./images/pf5-354.jpg 354w,
+                      ./images/pf5-370.jpg 370w,
+                      ./images/pf5-450.jpg 450w,
+                      ./images/pf5-708.jpg 708w,
+                      ./images/pf5-740.jpg 740w,
+                      ./images/pf5-900.jpg 900w
+                    "
+                    src="./images/pf5-354.jpg"
                     alt="Коробки"
-                    width="370"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="work__card">
                     <p class="work__text">
@@ -243,9 +283,17 @@
                 <div class="work">
                   <img
                     class="work__image"
-                    src="./images/pf6.jpg"
+                    srcset="
+                      ./images/pf6-354.jpg 354w,
+                      ./images/pf6-370.jpg 370w,
+                      ./images/pf6-450.jpg 450w,
+                      ./images/pf6-708.jpg 708w,
+                      ./images/pf6-740.jpg 740w,
+                      ./images/pf6-900.jpg 900w
+                    "
+                    src="./images/pf6-354.jpg"
                     alt="Карта мира на мониторе"
-                    width="370"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="work__card">
                     <p class="work__text">
@@ -267,9 +315,17 @@
                 <div class="work">
                   <img
                     class="work__image"
-                    src="./images/pf7.jpg"
+                    srcset="
+                      ./images/pf7-354.jpg 354w,
+                      ./images/pf7-370.jpg 370w,
+                      ./images/pf7-450.jpg 450w,
+                      ./images/pf7-708.jpg 708w,
+                      ./images/pf7-740.jpg 740w,
+                      ./images/pf7-900.jpg 900w
+                    "
+                    src="./images/pf7-354.jpg"
                     alt="Открытый журнал"
-                    width="370"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="work__card">
                     <p class="work__text">
@@ -291,9 +347,17 @@
                 <div class="work">
                   <img
                     class="work__image"
-                    src="./images/pf8.jpg"
+                    srcset="
+                      ./images/pf8-354.jpg 354w,
+                      ./images/pf8-370.jpg 370w,
+                      ./images/pf8-450.jpg 450w,
+                      ./images/pf8-708.jpg 708w,
+                      ./images/pf8-740.jpg 740w,
+                      ./images/pf8-900.jpg 900w
+                    "
+                    src="./images/pf8-354.jpg"
                     alt="Бирка бренда"
-                    width="370"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="work__card">
                     <p class="work__text">
@@ -315,9 +379,17 @@
                 <div class="work">
                   <img
                     class="work__image"
-                    src="./images/pf9.jpg"
+                    srcset="
+                      ./images/pf9-354.jpg 354w,
+                      ./images/pf9-370.jpg 370w,
+                      ./images/pf9-450.jpg 450w,
+                      ./images/pf9-708.jpg 708w,
+                      ./images/pf9-740.jpg 740w,
+                      ./images/pf9-900.jpg 900w
+                    "
+                    src="./images/pf9-354.jpg"
                     alt="Человек работает за ноутбуком"
-                    width="370"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
                   <div class="work__card">
                     <p class="work__text">

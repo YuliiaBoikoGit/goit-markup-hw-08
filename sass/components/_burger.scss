@@ -15,6 +15,7 @@
 
     &.is-open {
       display: block;
+      padding-top: 0;
     }
   }
 
@@ -34,7 +35,8 @@
   border: none;
   background-color: transparent;
 
-  &:focus {
+  &:focus,
+  &:hover {
     color: $accent-color;
   }
   & .burger-close {

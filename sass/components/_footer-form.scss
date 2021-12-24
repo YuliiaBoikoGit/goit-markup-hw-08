@@ -31,8 +31,6 @@
 .footer-form__input {
   padding: 15px 16px;
 
-  width: 450px;
-
   color: $primary-bg-color;
   background-color: $footer-bg-color;
 
@@ -45,6 +43,14 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
+  }
+
+  @media screen and (max-width: 479px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
   }
 
   @media screen and (min-width: $desktop) {

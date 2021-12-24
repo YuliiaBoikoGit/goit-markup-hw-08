@@ -35,10 +35,6 @@
   border: none;
   background-color: transparent;
 
-  &:focus,
-  &:hover {
-    color: $accent-color;
-  }
   & .burger-close {
     display: none;
   }
@@ -47,6 +43,13 @@
   }
   &.is-open .burger-open {
     display: none;
+  }
+
+  &:hover .burger-open,
+  &:focus .burger-open,
+  &:focus .burger-close,
+  &:hover .burger-close {
+    fill: $accent-color;
   }
 
   @media screen and (min-width: $tablet) {

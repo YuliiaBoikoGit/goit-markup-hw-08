@@ -351,10 +351,6 @@
   background-color: transparent;
 }
 
-.burger__button:focus, .burger__button:hover {
-  color: #2196f3;
-}
-
 .burger__button .burger-close {
   display: none;
 }
@@ -365,6 +361,13 @@
 
 .burger__button.is-open .burger-open {
   display: none;
+}
+
+.burger__button:hover .burger-open,
+.burger__button:focus .burger-open,
+.burger__button:focus .burger-close,
+.burger__button:hover .burger-close {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {

@@ -13,9 +13,12 @@
     background-color: $primary-bg-color;
     padding: 48px 40px;
 
+    overflow-y: scroll;
+
     &.is-open {
       display: block;
       padding-top: 0;
+      z-index: 1;
     }
   }
 
@@ -26,12 +29,16 @@
   }
 }
 
+.logo.is-open {
+  opacity: 0;
+}
+
 // Button
 
 .burger__button {
   display: inline-flex;
   margin: 0;
-  padding: 0;
+  padding: 4px 0;
   border: none;
   background-color: transparent;
 
@@ -98,4 +105,8 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+
+  @media screen and (max-width: 435px) {
+    font-size: 15px;
+  }
 }

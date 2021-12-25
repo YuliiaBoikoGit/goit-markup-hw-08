@@ -320,10 +320,12 @@
     width: 100%;
     background-color: #ffffff;
     padding: 48px 40px;
+    overflow-y: scroll;
   }
   .burger__menu.is-open {
     display: block;
     padding-top: 0;
+    z-index: 1;
   }
 }
 
@@ -341,12 +343,16 @@
   }
 }
 
+.logo.is-open {
+  opacity: 0;
+}
+
 .burger__button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0;
-  padding: 0;
+  padding: 4px 0;
   border: none;
   background-color: transparent;
 }
@@ -420,6 +426,12 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 435px) {
+  .burger-social__link {
+    font-size: 15px;
+  }
 }
 
 .button {

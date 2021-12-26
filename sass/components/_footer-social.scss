@@ -1,21 +1,11 @@
 .social {
-  display: block;
-  width: 206px;
-
   @media screen and (max-width: 767px) {
-    margin: 60px auto;
+    margin-bottom: 60px;
     text-align: center;
-  }
-
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    margin-left: 165px;
-    padding-right: 89px;
-    padding-top: 5px;
   }
 
   @media screen and (min-width: $desktop) {
     margin-left: 70px;
-    padding-top: 12px;
   }
 }
 .social__title {

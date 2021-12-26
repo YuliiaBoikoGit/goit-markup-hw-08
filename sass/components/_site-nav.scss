@@ -7,6 +7,12 @@
     width: 100%;
   }
 }
+.site-nav__thumb {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
 .site-nav__list {
   @media screen and (max-width: 767px) {
     margin-bottom: 306px;

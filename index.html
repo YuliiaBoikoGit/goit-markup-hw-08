@@ -102,7 +102,12 @@
       <section class="hero">
         <div class="hero__overlay">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero__button button" type="button" data-modal-open>
+          <button
+            class="hero__button button"
+            type="button"
+            aria-label="Открывает модальное окно"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
@@ -654,7 +659,11 @@
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <button class="modal-button" data-modal-close>
+        <button
+          class="modal-button"
+          aria-label="Закрывает модальное окно"
+          data-modal-close
+        >
           <svg class="modal-button__icon">
             <use href="./images/icons.svg#vector"></use>
           </svg>
